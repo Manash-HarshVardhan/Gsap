@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bodycontainer {
+  overflow-x: hidden;
+}
+
+.graphicheader {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.graphicheader--headingcontainer {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3.3vw;
+  position: absolute;
+  top: 3vw;
+  right: 5vw;
+  line-height: 90px;
+}
+.graphicheader--headingcontainer--firstheading {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+.graphicheader--headingcontainer--secheading {
+  align-self: start;
+  font-weight: 400;
+}
+.graphicheader--menusvg {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 70px;
+  right: 60px;
+  border-radius: 50%;
+  border: 10px solid rgb(111, 121, 195);
+}
+
+.firstsec--topbg {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.firstsec--toparea {
+  background-color: rgb(238, 236, 236);
+  padding-top: 150px;
+}
+
+.secsection {
+  height: 450vh;
+  background: rgb(238, 236, 236);
+  position: relative;
+}
+.secsection--page {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  margin-left: 15%;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7%;
+  line-height: 40px;
+}
+.secsection--page--para {
+  font-size: 12px;
+}
+.secsection--page--heading {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.secsection--myimage {
+  position: absolute;
+  top: 105vh;
+}
+.secsection--myimage img {
+  margin-left: 10%;
+  margin-bottom: 100px;
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.maincontainer {
+  position: absolute;
+  z-index: -1;
+}
+
+.asidecontainer {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 550vh;
+}
+.asidecontainer--text {
+  font-size: 120px;
+  font-weight: 400;
+  white-space: nowrap;
+  display: inline-block;
+  transform: rotate(-90deg);
+}/*# sourceMappingURL=style.css.map */
