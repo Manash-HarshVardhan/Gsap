@@ -112,3 +112,23 @@ font-family:Arial, Helvetica, sans-serif;
         transform: rotate(-90deg);
     }
 }
+.asidehome{
+    position:fixed;
+    &--text{
+        width: fit-content;
+        font-size: 130px;
+        text-transform:uppercase;
+        transform: rotate(90deg);
+        transform-origin: left;
+        margin-left: 20px;
+        color: transparent;
+            -webkit-text-stroke: 1px black;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+            transition: .3s;
+    }
+    &--text:hover{
+        color: black;
+        font-size: 150px;
+    }
+}
