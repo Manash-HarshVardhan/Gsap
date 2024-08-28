@@ -24,7 +24,23 @@ gsap.to(".asidecontainer--text", {
     },    
 });
 
-gsap.to('.graphicheader--menusvg',{
-    transform:'rotate(360deg)',
-    
+gsap.from('.secsection--page',{
+    y:'20px',
+    opacity:0,
+    duration:2,
+    scrollTrigger: {
+        trigger:'.secsection',
+        scroller:'body',
+        start:'top 90%',
+        end:'top 70%',
+        scrub:2,
+        markers:true
+    },
 })
+document.addEventListener('mousemove',(e)=>{
+    const cursor=document.querySelector('.bodycontainer--customcursor')
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+   
+});
+document.body.style.cursor='none'
