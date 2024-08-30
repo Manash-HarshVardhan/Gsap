@@ -24,6 +24,7 @@ gsap.to(".asidecontainer--text", {
     },    
 });
 
+
 gsap.from('.secsection--page',{
     y:'20px',
     opacity:0,
@@ -34,9 +35,23 @@ gsap.from('.secsection--page',{
         start:'top 90%',
         end:'top 70%',
         scrub:2,
-        markers:true
     },
-})
+});
+gsap.to('.graphicheader--menusvg', {
+    rotation: 1800,
+    ease:"power2.out",
+    
+    scrollTrigger: {
+        trigger: '.secsection',
+        scroller:'body',
+        start: 'top 80%',
+        end: '100% 100%',
+        scrub:2,
+       
+    }
+});
+
+
 document.addEventListener('mousemove',(e)=>{
     const cursor=document.querySelector('.bodycontainer--customcursor')
     cursor.style.left = `${e.clientX}px`;
