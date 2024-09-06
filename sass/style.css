@@ -5,11 +5,35 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bodycontainer {
-  overflow-x: hidden;
+.preloader {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader--image {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.firstsection--topbg {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.firstsection--toparea {
+  background-color: rgb(238, 236, 236);
+  padding-top: 150px;
+}
+
+.graphicmillwebpg {
+  display: none;
   background: rgb(233, 232, 232);
 }
-.bodycontainer--customcursor {
+.graphicmillwebpg--customcursor {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -22,11 +46,49 @@
   justify-content: center;
   align-items: center;
 }
-.bodycontainer--customcursor--dot {
+.graphicmillwebpg--customcursor--dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: black;
+}
+
+.pgandimgsection {
+  height: 450vh;
+  background: rgb(238, 236, 236);
+  position: relative;
+}
+.pgandimgsection--page {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  margin-left: 15%;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7%;
+  line-height: 40px;
+}
+.pgandimgsection--page--para {
+  font-size: 1vw;
+}
+.pgandimgsection--page--heading {
+  margin-bottom: 40px;
+  font-size: 2.16vw;
+  font-weight: 400;
+}
+.pgandimgsection--myimage {
+  position: absolute;
+  top: 105vh;
+}
+.pgandimgsection--myimage img {
+  margin-left: 10%;
+  margin-bottom: 100px;
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .graphicheader {
@@ -58,55 +120,6 @@
   position: fixed;
   top: 70px;
   right: 60px;
-}
-
-.firstsec--topbg {
-  width: 100vw;
-  height: calc(100vh - 150px);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.firstsec--toparea {
-  background-color: rgb(238, 236, 236);
-  padding-top: 150px;
-}
-
-.secsection {
-  height: 450vh;
-  background: rgb(238, 236, 236);
-  position: relative;
-}
-.secsection--page {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  background-color: white;
-  margin-left: 15%;
-  top: -60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 7%;
-  line-height: 40px;
-}
-.secsection--page--para {
-  font-size: 12px;
-}
-.secsection--page--heading {
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-weight: 400;
-}
-.secsection--myimage {
-  position: absolute;
-  top: 105vh;
-}
-.secsection--myimage img {
-  margin-left: 10%;
-  margin-bottom: 100px;
-  width: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .maincontainer {

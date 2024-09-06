@@ -1,0 +1,12 @@
+.firstsection{
+    
+    &--topbg{
+        width: 100vw;
+        height: calc(100vh - 150px);
+        object-fit: cover;
+    }
+    &--toparea{
+        background-color: $color1;;
+        padding-top: 150px;
+    }
+}

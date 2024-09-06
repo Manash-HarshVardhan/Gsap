@@ -1,0 +1,19 @@
+.asidecontainer{
+    position: absolute;
+    top:0;
+    z-index: -10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 550vh;
+    
+    &--text{
+       
+        font-size: 120px;
+        font-weight: 400;
+        white-space: nowrap;
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+}

@@ -1,0 +1,31 @@
+.graphicheader{
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    &--headingcontainer{
+        width: fit-content;
+        font-size: 3.3vw;
+        position: absolute;
+        top: 3vw;
+        right: 5vw;
+        line-height:  90px;
+        &--firstheading{
+            color: transparent;
+            -webkit-text-stroke: 1px $secondarycolor;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+        }
+        &--secheading{
+           align-self: start;
+           font-weight: 400;
+        }
+    }
+    &--menusvg{
+        
+        position: fixed;
+        top:70px;
+        right: 60px;
+       
+    }
+}

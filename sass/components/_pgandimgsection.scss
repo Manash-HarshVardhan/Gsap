@@ -1,0 +1,37 @@
+.pgandimgsection{
+    height: 450vh;
+    background: $color1;
+    position: relative;
+    &--page{
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        background-color: $color2;
+        margin-left: 15%;
+        top: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7%;
+        line-height: 40px;
+        &--para{
+            font-size: 1vw;
+        }
+        &--heading{
+            margin-bottom: 40px;
+            font-size: 2.16vw;
+            font-weight: 400;
+        }
+    }
+    
+    &--myimage{
+        position: absolute;
+        top: 105vh;
+    }
+    &--myimage img{
+        margin-left: 10%;
+        margin-bottom: 100px;
+        width: 60%;
+        object-fit: cover;
+    }
+}
