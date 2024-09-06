@@ -90,15 +90,32 @@ setTimeout(()=>{
 gsap.to('.preloader--image',{
     rotation: 360,
     ease:"power2.out",
-    duration:2,
-    delay:0.3
+    duration:2.5,
 })
 
+gsap.from('.preloader--image',{
+    width:0.5,
+    duration:1,
+})
 
 gsap.to('.preloader',{
     opacity:0,
+   
     ease:"power2.out",
     duration:1,
     delay:1
+})
+
+gsap.to('.nxtpagescroller',{
+    height:'100vh',
+    delay:4,
+    scrollTrigger:{
+        trigger:'body',
+        scroller:'body',
+        start:'490% 70%',
+        end:'490% 50%',
+        scrub:2,
+        // markers:true
+    }
 })
 

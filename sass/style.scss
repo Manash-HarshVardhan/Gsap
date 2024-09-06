@@ -1,13 +1,14 @@
 @import 'global';
-@import 'preloader';
 @import 'var';
-@import '/sass/components/firstsection';
-@import '/sass/components/graphicmillwebpg';
-@import '/sass/components/pgandimgsection';
-@import '/sass/components/graphicheader';
-@import '/sass/components/maincontainer';
-@import '/sass/components/asidecontainer';
-@import '/sass/components/asidehome';
+@import './components/graphicmillwebpg';
+@import './components/preloader';
+@import './components/firstsection';
+@import './components/pgandimgsection';
+@import './components/graphicheader';
+@import './components/maincontainer';
+@import './components/asidecontainer';
+@import './components/asidehome';
+@import './components/nxtpagescroller';
 
 
 
